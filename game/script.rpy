@@ -3,19 +3,24 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-
+#characters
 define mc = Character("Hana")
 define t = Character("Ms.Melissa")
 define c = Character("Cynthia")
-
+#backgrounds
 image bg classroom = im.Scale("classroom.png",1920,1080)
 image bg empty = im.Scale("empty.png",1920,1080)
 image bg dorm = im.Scale("dormRoom.png",1920,1080)
+
+
+# character images
 image Melissa = im.Scale("Melissa.png",1000,1000)
 image Hana = im.Scale("Hana.png",1000,1000)
 image Cynthia = im.Scale("Cynthia.png",1000,1000)
 
-
+#relationship points
+default Cynthia_points = 0
+default discovery_points = 0
 # The game starts here.
 
 label start:
@@ -65,9 +70,51 @@ label start:
     show Cynthia
     hide Hana
     c "Preparing for my assignement. I just got a tier 2 assignment! Patroling a village nearby"
+    menu:
+        "Congratulate her":
+            hide Cynthia
+            show Hana at left
+            mc "Really? Great job Cynthia!"
+            show Cynthia at right
+            hide Hana
+            c "Thanks! Do you want anything from the village?"
+            $ Cynthia_points += 20
+            menu:
+                "Yes please!":
+                    hide Cynthia
+                    show Hana at left
+                    mc "Maybeee a bracelet?"
+                    show Cynthia at right
+                    hide Hana
+                    c "Sure thing!"
+                "No thaknks":
+                    hide Cynthia
+                    show Hana at left
+                    mc "No thanks, I'm good."
+                    show Cynthia at right
+                    hide Hana
+                    c "Alright"
+        "Act indifferent":
+            hide Cynthia
+            show Hana at left
+            mc "Oh, tha's nice."
+            show Cynthia at right
+            hide Hana
+            c "Yeah "
     hide Cynthia
-    show Hana
-    mc "Oh wow, that is amazing"
+    show Hana at left
+    mc "Why did I join Glitter Heart...?"
+    menu:
+        "To better my powers":
+            mc "My powers were weak back them, I want to become strong"
+        "To look good":
+            mc "Kids often bullied me for my looks...my weakness. I want to change that"
+        "To escape my old life":
+            mc "I hated the village. Im glad im free from it"
+        
+
+
+
 
 
     
