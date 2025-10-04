@@ -8,6 +8,8 @@ define mc = Character("Hana")
 define t = Character("Ms.Melissa")
 define c = Character("Cynthia")
 
+image bg classroom = "classroom.png"
+
 # The game starts here.
 
 label start:
@@ -16,7 +18,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene classroom
+    scene bg classroom
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
