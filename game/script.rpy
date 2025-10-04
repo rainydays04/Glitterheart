@@ -14,7 +14,7 @@ image bg dorm = im.Scale("dormRoom.png",1920,1080)
 image Melissa = im.Scale("Melissa.png",1000,1000)
 image Hana = im.Scale("Hana.png",1000,1000)
 
-image Melissa dim = im.MatrixColor("Melissa.png", im.matrix.brightness(-0.5),1000,1000)
+
 # The game starts here.
 
 label start:
