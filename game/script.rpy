@@ -38,7 +38,7 @@ label start:
     scene bg classroom
     show Hana at left
     mc "I don't see why I wasn't given an assignment for the month"
-    show Melissa dim at right
+    show Melissa at right
     hide Hana
     t "Look Hana, your effort is there, but lacking in results. Your not ready to be given an assignment."
     hide Melissa
