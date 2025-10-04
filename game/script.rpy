@@ -11,8 +11,8 @@ define c = Character("Cynthia")
 image bg classroom = im.Scale("classroom.png",1920,1080)
 image bg empty = im.Scale("empty.png",1920,1080)
 image bg dorm = im.Scale("dormRoom.png",1920,1080)
-image Melissa = im.Scale("Melissa.png",800,800)
-image Hana = im.Scale("Hana.png",800,800)
+image Melissa = im.Scale("Melissa.png",1000,1000)
+image Hana = im.Scale("Hana.png",1000,1000)
 # The game starts here.
 
 label start:
