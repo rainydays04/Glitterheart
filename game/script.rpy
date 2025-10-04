@@ -11,7 +11,8 @@ define c = Character("Cynthia")
 image bg classroom = im.Scale("classroom.png",1920,1080)
 image bg empty = im.Scale("empty.png",1920,1080)
 image bg dorm = im.Scale("dormRoom.png",1920,1080)
-image Melissa = im.Scale("Melissa.png",500,800)
+image Melissa = im.Scale("Melissa.png",600,800)
+image Hana = im.Scale("Hana.png",600,800)
 # The game starts here.
 
 label start:
@@ -33,12 +34,23 @@ label start:
     mc "I think today was a reminder. I am behind."
 
     scene bg classroom
-    show Melissa
+    hide Melissa
+    show Hana
     mc "I don't see why I wasn't given an assignment for the month"
+    show Melissa
+    hide Hana
     t "Look Hana, your effort is there, but lacking in results. Your not ready to be given an assignment."
+    hide Melissa
+    show Hana
     mc "I could still take a simple one. Community service, teacher's assistant-"
+    show Melissa
+    hide Hana
     t "Fine. I'll give you an assignment. Give me an essay why you want to be a Glitterheart."
+    hide Melissa
+    show Hana
     mc "That's it?"
+    show Melissa
+    hide Hana
     t "Yes. Now go."
     hide Melissa with dissolve
     scene bg dormRoom with fade
