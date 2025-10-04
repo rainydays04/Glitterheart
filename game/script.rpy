@@ -3,10 +3,10 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
-define mc = Character("star")
-define star =Character("meow")
 
+define mc = Character("Hana")
+define t = Character("Ms.Melissa")
+define c = Character("Cynthia")
 
 # The game starts here.
 
@@ -16,7 +16,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bg school
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
