@@ -35,7 +35,7 @@ label start:
 
     scene bg classroom
     hide Melissa
-    show Hana
+    show Hana at left
     mc "I don't see why I wasn't given an assignment for the month"
     show Melissa
     hide Hana
@@ -55,6 +55,17 @@ label start:
     hide Melissa with dissolve
     scene bg dormRoom with fade
     show Cynthia
+    c "Hey Hana! How was class?"
+    hide Cynthia
+    show Hana
+    mc "Great, oh where are you headed?"
+    show Cynthia
+    hide Hana
+    c "Preparing for my assignement. I just got a tier 2 assignment! Patroling a village nearby"
+    hide Cynthia
+    show Hana
+    mc "Oh wow, that is amazing"
+
     
 
 
