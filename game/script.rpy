@@ -36,7 +36,6 @@ label start:
     mc "I think today was a reminder. I am behind."
 
     scene bg classroom
-    hide Melissa
     show Hana at left
     mc "I don't see why I wasn't given an assignment for the month"
     show Melissa dim at right
