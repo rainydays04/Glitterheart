@@ -8,7 +8,7 @@ define mc = Character("Hana")
 define t = Character("Ms.Melissa")
 define c = Character("Cynthia")
 
-image bg classroom = "classroom.png"
+image bg classroom = im.Scale("classroom.png",1920,1080)
 
 # The game starts here.
 
@@ -24,9 +24,9 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show 
+    show t
 
     # These display lines of dialogue.
-    mc "Hello, world!"
+    t "You do not have an assignment this month, Hana"
 
     return
