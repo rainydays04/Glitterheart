@@ -13,6 +13,7 @@ image bg empty = im.Scale("empty.png",1920,1080)
 image bg dorm = im.Scale("dormRoom.png",1920,1080)
 image Melissa = im.Scale("Melissa.png",1000,1000)
 image Hana = im.Scale("Hana.png",1000,1000)
+image Cynthia = im.Scale("Cynthia.png",1000,1000)
 
 
 # The game starts here.
@@ -54,7 +55,8 @@ label start:
     hide Hana
     t "Yes. Now go."
     hide Melissa with dissolve
-    scene bg dormRoom with fade
+    
+    scene bg dorm with fade
     show Cynthia at right
     c "Hey Hana! How was class?"
     hide Cynthia
