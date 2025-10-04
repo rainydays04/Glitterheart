@@ -13,6 +13,8 @@ image bg empty = im.Scale("empty.png",1920,1080)
 image bg dorm = im.Scale("dormRoom.png",1920,1080)
 image Melissa = im.Scale("Melissa.png",1000,1000)
 image Hana = im.Scale("Hana.png",1000,1000)
+
+image Melissa dim = im.MatrixColor("Melissa.png", im.matrix.brightness(-0.5),1000,1000)
 # The game starts here.
 
 label start:
@@ -37,7 +39,7 @@ label start:
     hide Melissa
     show Hana at left
     mc "I don't see why I wasn't given an assignment for the month"
-    show Melissa at right
+    show Melissa dim at right
     hide Hana
     t "Look Hana, your effort is there, but lacking in results. Your not ready to be given an assignment."
     hide Melissa
@@ -65,6 +67,7 @@ label start:
     hide Cynthia
     show Hana
     mc "Oh wow, that is amazing"
+
 
     
 
