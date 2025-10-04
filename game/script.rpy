@@ -37,27 +37,27 @@ label start:
     hide Melissa
     show Hana at left
     mc "I don't see why I wasn't given an assignment for the month"
-    show Melissa
+    show Melissa at right
     hide Hana
     t "Look Hana, your effort is there, but lacking in results. Your not ready to be given an assignment."
     hide Melissa
-    show Hana
+    show Hana at left
     mc "I could still take a simple one. Community service, teacher's assistant-"
-    show Melissa
+    show Melissa at right
     hide Hana
     t "Fine. I'll give you an assignment. Give me an essay why you want to be a Glitterheart."
     hide Melissa
-    show Hana
+    show Hana at left
     mc "That's it?"
-    show Melissa
+    show Melissa at right
     hide Hana
     t "Yes. Now go."
     hide Melissa with dissolve
     scene bg dormRoom with fade
-    show Cynthia
+    show Cynthia at right
     c "Hey Hana! How was class?"
     hide Cynthia
-    show Hana
+    show Hana at left
     mc "Great, oh where are you headed?"
     show Cynthia
     hide Hana
