@@ -104,8 +104,8 @@ label start:
             hide Hana
             c "Yeah.... Do you want anything from the village?"
             $ Cynthia_points -= 10
-    hide Cynthia
-    show Hana at left
+    hide Cynthia with moveoutright
+    show Hana
     mc "Why did I join Glitter Heart...?"
     menu:
         "To better my powers":
