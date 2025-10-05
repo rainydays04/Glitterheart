@@ -111,13 +111,23 @@ label start:
     mc "Why did I join Glitter Heart...?"
     #help??what are these options
     menu:
-        "To become stronger":
-            mc "My powers were weak back them, I want to become strong"
-        "To look good":
-            mc "Kids often bullied me for my looks...my weakness. I want to change that"
-        "To escape my old life":
-            mc "I hated the village. Im glad im free from it"
-    mc "Let me write that down"
+        "To prove the girls from my village wrong":
+            #gain 5 discovery points
+            #add a flashback scene later
+            $ discovery_points += 5
+            mc "The girls in my village used to make fun of how my looks, my skill. Coming here, perhaps I could prove them wrong"
+        "To learn more about magic":
+            #gain 8 discovery points
+            $ discovery_points += 8
+            #flashback to learning about magic for the first time
+            mc "Magic has protected my villages for centeries. Perhaps I could help them, or someone like me from ever expereincing what I did..."
+        "To make my family proud":
+            #gain 3 discovery points
+            $ discovery_points += 3
+            #scene of parents giving books even though they couldnt afford it
+            mc "They gave me everything I needed to achieve my dreams. I want to make them proud."
+        mc "I guess I'll write about that."
+        hide Hana with dissolve
 
     jump classroom_scene
 label classroom_scene:
