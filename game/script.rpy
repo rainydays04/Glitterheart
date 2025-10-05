@@ -10,7 +10,7 @@ define c = Character("Cynthia")
 #backgrounds
 image bg classroom = im.Scale("classroom.png",1920,1080)
 image bg empty = im.Scale("empty.png",1920,1080)
-image bg dorm = im.Scale("dormRoom.png",1920,1080)
+image bg dorm = im.Scale("domRoom.png",1920,1080)
 
 
 # character images
@@ -62,6 +62,8 @@ label start:
     hide Melissa with dissolve
     
     scene bg dorm with fade
+    hide Hana
+    mc "I share a dorm with Cynthia. She is practically perfect. I wonder how her day went."
     show Cynthia at right
     c "Hey Hana! How was class?"
     hide Cynthia
@@ -86,21 +88,22 @@ label start:
                     mc "Maybeee a bracelet?"
                     show Cynthia at right
                     hide Hana
-                    c "Sure thing!"
-                "No thaknks":
+                    c "I'll make sure to get you one!"
+                "No thanks":
                     hide Cynthia
                     show Hana at left
-                    mc "No thanks, I'm good."
+                    mc "Um no thanks, I'm good."
                     show Cynthia at right
                     hide Hana
-                    c "Alright"
+                    c "Aw, alright"
         "Act indifferent":
             hide Cynthia
             show Hana at left
             mc "Oh, tha's nice."
             show Cynthia at right
             hide Hana
-            c "Yeah "
+            c "Yeah.... Do you want anything from the village?"
+            $ Cynthia_points -= 10
     hide Cynthia
     show Hana at left
     mc "Why did I join Glitter Heart...?"
