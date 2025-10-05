@@ -106,9 +106,12 @@ label start:
             $ Cynthia_points -= 10
     hide Cynthia with moveoutright
     show Hana
+    mc "Tier 2 already...I should really start up on my assigment."
+    mc "..."
     mc "Why did I join Glitter Heart...?"
+    #help??what are these options
     menu:
-        "To better my powers":
+        "  ":
             mc "My powers were weak back them, I want to become strong"
         "To look good":
             mc "Kids often bullied me for my looks...my weakness. I want to change that"
