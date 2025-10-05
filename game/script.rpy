@@ -111,13 +111,18 @@ label start:
     mc "Why did I join Glitter Heart...?"
     #help??what are these options
     menu:
-        "  ":
+        "To become stronger":
             mc "My powers were weak back them, I want to become strong"
         "To look good":
             mc "Kids often bullied me for my looks...my weakness. I want to change that"
         "To escape my old life":
             mc "I hated the village. Im glad im free from it"
-        
+    mc "Let me write that down"
+
+    jump classroom_scene
+label classroom_scene:
+    scene bg classroom with fade
+    show Hana at left
 
 
 
