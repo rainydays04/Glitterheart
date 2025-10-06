@@ -127,7 +127,7 @@ label start:
             #scene of parents giving books even though they couldnt afford it
             mc "They gave me everything I needed to achieve my dreams. I want to make them proud."
         mc "Ill write about that for my essay, hopefully its good enough."
-        hide Hana with moveoutleft
+    hide Hana with moveoutleft
     scene bg empty with fade
         
 
