@@ -137,6 +137,8 @@ label start:
             #flashbck family sneaking her books scene
             mc "They gave me everything I needed to achieve my dreams. I want to make them proud."
     mc "Ill write about that for my essay, hopefully its good enough."
+    narrator "After working on her essay for a while, the sun begins to set"
+    mc "{i}yawn{/i} its getting late"
     hide Hana with moveoutleft
     scene bg empty with fade
         
