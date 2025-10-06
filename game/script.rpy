@@ -181,7 +181,7 @@ label start:
     return
 label act_2:
     scene bg library with fade 
-    show hana with movein left
+    show hana with moveinleft
     mc "Perhaps here I can find some inspiration. History books maybe"
     mc"signma boi im the alpha im the leadeer"
 
