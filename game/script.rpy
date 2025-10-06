@@ -142,14 +142,14 @@ label start:
     hide Hana
     t "You know assignments, regardless of what they are, are meant to take time and effort."
     t "Well if your rushing this assignment, I'll just grade it right here and now."
-    if discovery_point == 5:
+    if discovery_points == 5:
         t "hmm... proving others wrong is always a good motivator. Spite can be powerful. But is that all you want?"
         t "You become a Luminara to protect others, not to spite a girl from your 7th years."
-    if discovery_point == 8:
+    if discovery_points == 8:
         t "..."
         t "Learning is always noble, you will always learn regardless of what you are doing no matter where you are in life."
         t "But become a Luminara is not just learning, it about teaching, protecting. It is about action with magic, not knowledge of."
-    if discovery_point == 3:
+    if discovery_points == 3:
         t "hmm...I see."
         t "I understand your family must be  very important to, especially with how much they helped you get here."
         t "But becoming a Luminara should not just be to repay someone. It is your future, your life. You must want it for yourself."
