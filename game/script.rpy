@@ -179,10 +179,5 @@ label start:
 
 
     return
-label act_2:
-    scene bg library with fade
-    show Hana
-    mc "Maybe I could find inspriation here..."
-    
-    return
+
 
