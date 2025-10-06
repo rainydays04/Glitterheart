@@ -270,7 +270,7 @@ label act_2:
             mc "Ah, I see. So what do you guys do?"
             narrator "Her eyes sparkle slightly as she uncrosses her arms, standing straighter as she begins to speak"
             i "We order all the books for the library here. Curate them, organize them, and set up events like book sales then donate them to kids"
-            
+    return
 
 
 
