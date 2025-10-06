@@ -127,7 +127,7 @@ label start:
             #scene of parents giving books even though they couldnt afford it
             mc "They gave me everything I needed to achieve my dreams. I want to make them proud."
         mc "I guess I'll write about that."
-        hide Hana with dissolve
+        
 
     jump classroom_scene
 label classroom_scene:
