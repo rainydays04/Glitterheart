@@ -9,6 +9,7 @@ define t = Character("Ms.Melissa")
 define c = Character("Cynthia")
 define l = Character("Luna")
 define s = Character("Sophie")
+define i = Character("Isla")
 define idk = Character("???")
 
 #backgrounds
@@ -174,22 +175,8 @@ label start:
     hide Melissa with fade
     scene bg empty with fade
     jump act_2
-    
-    
-
-
-
-
-
-
-
-    
-
-
-
-
-
     return
+
 label act_2:
     scene bg library with fade 
     show Hana with moveinleft
@@ -267,10 +254,15 @@ label act_2:
             idk "Careful!"
             narrator "To her suprise, no book hits her head. Instead it is a shrill voice from behind her"
             #show Isla
+            $ meet_isla = True
             narrator "Hana turns around and sees a brunette with green eyes, frozen midway through a karate chop motion. The book Hana was trying to reach for now having flown across the isle"
             idk "We have stools you know?"
             narrator "She looked as some would say 'thoroughly pissed' "
             mc "Sorry, I was just in such a rush I didn't see them"
+            narrator "Hana looks over at the girl and sees a name tag that read {i}Isla{/i}"
+            i "Well now you know for next time"
+            
+
 
             
             
