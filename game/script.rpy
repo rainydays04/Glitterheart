@@ -8,6 +8,7 @@ define mc = Character("Hana")
 define t = Character("Ms.Melissa")
 define c = Character("Cynthia")
 define l = Character("Luna")
+define s = Character("Sophie")
 define idk = Character("???")
 
 #backgrounds
@@ -195,6 +196,11 @@ label act_2:
             mc "I never really enjoyed history. Lots of dates and names to remember."
             mc "..."
             mc "But knowing the past is important, seeing how it effects current day and all."
+            narrator "From the other side of the shelf, Hana hears someone snickering. A cheery know-it-all voice jeering between the books."
+            idk "It is! History is one of the most important subjects you can learn!"
+            narrator "From the side of the shelf, a girl with curly brown and glasses steps out, a pile of books in hand"
+            #add image of sophie"
+            
         "Look at fiction books":
             $ discovery_points += 5
             #add image or animation of her going through fiction books
@@ -206,7 +212,7 @@ label act_2:
             $ meet_luna = True
             narrator "You hear someone clearing their throat."
             idk "Sorry, hi. I couldn't help but ovehear you mention ballet?"
-            narrator "Hana looks over to the see a girk with blonde hair and green eyes, towering slightly over her, but still managing to look so meek"
+            narrator "Hana looks over to the see a girl with blonde hair and green eyes, towering slightly over her, but still managing to look so meek"
             mc "Oh, yeah I was just looking through some books. I used to love dancing as a kid"
             narrator "The girl's eyes light up"
             idk "I love ballet! I'm Luna, by the way. I have been trying to start a dance club here, but I haven't gotten enough interest to get it started. "
@@ -214,6 +220,9 @@ label act_2:
             mc "I'm Hana. I thought you only needed interest to create club if it can connect to Tier missions or skill?"
             l "That's the thing most people don't know. Dancing is a skill, it improves balance, flexibility, and strength. Many Luminaras practice dance to assist in magical control"
             mc "Really? I never knew that, had I known I would have gotten into dance sooner"
+            narrator "Luna smiled brightly, leaning forward"
+            l "Well, if you still want to try, I already have the room reserved. You can come by after class today?"
+            mc "You know what, sure why not"
             
         "Look at poetry books":
             $ discovery_points += 3
