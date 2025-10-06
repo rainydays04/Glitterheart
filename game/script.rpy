@@ -142,11 +142,11 @@ label start:
     hide Hana
     t "You know assignments, regardless of what they are, are meant to take time and effort."
     t "Well if your rushing this assignment, I'll just grade it right here and now."
+    t "..."
     if discovery_points == 5:
         t "hmm... proving others wrong is always a good motivator. Spite can be powerful. But is that all you want?"
         t "You become a Luminara to protect others, not to spite a girl from your 7th years."
     if discovery_points == 8:
-        t "..."
         t "Learning is always noble, you will always learn regardless of what you are doing no matter where you are in life."
         t "But become a Luminara is not just learning, it about teaching, protecting. It is about action with magic, not knowledge of."
     if discovery_points == 3:
@@ -155,7 +155,10 @@ label start:
         t "But becoming a Luminara should not just be to repay someone. It is your future, your life. You must want it for yourself."
         t "Being a luminara is a lifelong commitment, not just a way to repay someone."
     t "Your getting somewhere, Hana. But I need you to think deeper. Why did you join Glitterheart Academy? Why do you want to become a Luminara?"
+    t "I want you to write a new essay, take your time with it. It isnt due until next month. I expect a thorough answer by then."
     hide Melissa
+    show Hana
+    mc "...Yes I understand. Thank you Ms.Melissa."
     
 
 
