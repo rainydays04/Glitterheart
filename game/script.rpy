@@ -167,7 +167,8 @@ label start:
     hide Hana with moveoutleft
     hide Melissa with fade
     scene bg empty with fade
-    jump act_2
+    narrator "End of Act 1"
+    
     
 
 
