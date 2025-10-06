@@ -179,5 +179,7 @@ label start:
 
 
     return
+label act_2:
+    scene bg library with fade 
 
 
