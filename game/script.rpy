@@ -126,7 +126,7 @@ label start:
             $ discovery_points += 3
             #scene of parents giving books even though they couldnt afford it
             mc "They gave me everything I needed to achieve my dreams. I want to make them proud."
-        mc "I guess I'll write about that."
+        mc "Ill write about that for my essay, hopefully its good enough."
         
 
     jump classroom_scene
