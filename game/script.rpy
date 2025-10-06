@@ -181,5 +181,18 @@ label start:
     return
 label act_2:
     scene bg library with fade 
+    show hana with movein left
+    mc "Perhaps here I can find some inspiration. History books maybe"
+    mc"signma boi 
+    im the alpha
+    im the leader
+    im the one to trust
+    together we'll do whatever it takes
+    we're in this pack for life
+    awoooo
+    we're wolves
+    we own"
+    menu:
+
 
 
