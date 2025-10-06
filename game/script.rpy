@@ -131,11 +131,11 @@ label start:
     hide Hana with moveoutleft
     scene bg empty with fade
     scene bg classroom with fade
-    show Hana at left
 
 label family_proud:
     show hana
     scene bg empty with fade
+    mc "storyline stuff"
 
 
 
