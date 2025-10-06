@@ -186,6 +186,10 @@ label act_2:
     menu:
         "Look at history books":
             $ discovery_points -= 2
+            #add image or animation of her going through history books
+            mc "I never really enjoyed history. Lots of dates and names to remember."
+            mc "..."
+            mc "But knowing the past is important, seeing how it effects current day and all."
         "Look at fiction books":
             $ discovery_points += 5
         "Look at poetry books":
