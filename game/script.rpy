@@ -27,6 +27,8 @@ image Cynthia = im.Scale("Cynthia.png",1000,1000)
 default Cynthia_points = 0
 default discovery_points = 0
 default meet_luna = False
+default meet_sophia = False
+default meet_isla= False
 # The game starts here.
 
 label start:
@@ -192,6 +194,7 @@ label act_2:
     menu:
         "Look at history books":
             $ discovery_points -= 2
+            $ meet_sophia = True
             #add image or animation of her going through history books
             mc "I never really enjoyed history. Lots of dates and names to remember."
             mc "..."
@@ -199,8 +202,32 @@ label act_2:
             narrator "From the other side of the shelf, Hana hears someone snickering. A cheery know-it-all voice jeering between the books."
             idk "It is! History is one of the most important subjects you can learn!"
             narrator "From the side of the shelf, a girl with curly brown and glasses steps out, a pile of books in hand"
-            #add image of sophie"
-            
+            #add image of sophie
+            narrator "The short girl reaches her hand out to Hana with a bright smile, struggling to balance the books in one hand"
+            s "Hi Hi! Sophie! It's rare to find someone ACTAUALLY interested in history around here!"
+            narrator "To say her enthusiasm is overwhelming would be an understatement.Hana shakes Sophie's hand"
+            mc "Hana, first year. I don't really like history all that much really"
+            #frowning face
+            s "Ah well, what are you looking for?"
+            mc "Just some content for an essay I need to write"
+            s "On what?"
+            #hana being slightly embarrased
+            mc "Just for the reason I joined Glitterheart in the first place"
+            s "Oh so the big questions."
+            #thinking face before answering
+            s "I like to imagine people's reasons reveal themselves over time, like in history books. There is not only the aftermath, but the add-up"
+            s "I personally joined to learn about the history of magic. I want to become a scholar who preserves the history of magic for future generations"
+            mc "That's kinda cool"
+            mc "I thought most people who came to Glitterheart wanted to become Luminaras"
+            s "Just because the school produces many alum who later become Luminaras does not mean that is is the only path."
+            s "There are many roles that serve society and often you just have to find how your own interest play into that"
+            mc "And I'm assuming history and become a scholar is your way of serving society?"
+            s "Society and myself"
+            mc "I see"
+            s "I can show you more of what I do if you want? I usually hang out with a study group at the cafe"
+            mc "I'll see if I can come by"
+            s "Alright!"
+            narrator "Sophie stumbles off, moving side to side to ensure none of her books fall"        
         "Look at fiction books":
             $ discovery_points += 5
             #add image or animation of her going through fiction books
@@ -223,9 +250,28 @@ label act_2:
             narrator "Luna smiled brightly, leaning forward"
             l "Well, if you still want to try, I already have the room reserved. You can come by after class today?"
             mc "You know what, sure why not"
+            l "Great, see then!"
+            #luna leaves the scene
+            narrator "Luna waves goodbye and skips off down the aisle of the library"
             
         "Look at poetry books":
             $ discovery_points += 3
+
+            mc "Poetry huh? Maybe if I write poetically enough, I'll get off the hook a bit more"
+            mc "Never read much though and oh- I think I know that author"
+            narrator "Hana attempts jumping to the top shelf to grab a book, but it slips from her grasp"
+            #animation of her finding some poetry books, a book falling
+            idk "Careful!"
+            narrator "To her suprise, no book hits her head. Instead it is a shrill voice from behind her"
+            #show Isla
+            narrator "Hana turns around and sees a brunette with green eyes, frozen midway through a karate chop motion. The book Hana was trying to reach for now having flown across the isle"
+            idk "We have stools you know?"
+            narrator "She looked as some would say 'thoroughly pissed' "
+            mc "Sorry, I was just in such a rush I didn't see them"
+
+            
+            
+            narrator
     
 
 
