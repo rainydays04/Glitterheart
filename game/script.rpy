@@ -181,9 +181,16 @@ label start:
     return
 label act_2:
     scene bg library with fade 
-    show hana with moveinleft
-    mc "Perhaps here I can find some inspiration. History books maybe"
-    mc"signma boi im the alpha im the leadeer"
+    show Hana with moveinleft
+    mc "Perhaps here I can find some inspiration. History books maybe or perhaps some literature."
+    menu:
+        "Look at history books":
+            $ discovery_points -= 2
+        "Look at fiction books":
+            $ discovery_points += 5
+        "Look at poetry books":
+            $ discovery_points += 3
+    
 
 
 
