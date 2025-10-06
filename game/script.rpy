@@ -139,6 +139,7 @@ label start:
     mc "Ill write about that for my essay, hopefully its good enough."
     narrator "After working on her essay for a while, the sun begins to set"
     mc "{i}yawn{/i} its getting late"
+    mc "Well this essay looks good anyway, I'll turn it in tomorrow and maybe I'll be given a real assignment"
     hide Hana with moveoutleft
     scene bg empty with fade
         
