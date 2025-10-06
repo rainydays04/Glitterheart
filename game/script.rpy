@@ -102,10 +102,11 @@ label start:
             mc "Oh, tha's nice."
             show Cynthia at right
             hide Hana
-            c "Yeah.... Do you want anything from the village?"
+            c "Yeah.... I'll leave you to your assignment then."
             $ Cynthia_points -= 10
     hide Cynthia with moveoutright
     show Hana
+    mc "sigh"
     mc "Tier 2 already...I should really start up on my assigment."
     mc "..."
     mc "Why did I join Glitter Heart...?"
@@ -124,17 +125,18 @@ label start:
         "To make my family proud":
             #gain 3 discovery points
             $ discovery_points += 3
-            #scene of parents giving books even though they couldnt afford it
+            jump family_proud
             mc "They gave me everything I needed to achieve my dreams. I want to make them proud."
         mc "Ill write about that for my essay, hopefully its good enough."
     hide Hana with moveoutleft
     scene bg empty with fade
-        
-
-    jump classroom_scene
-label classroom_scene:
     scene bg classroom with fade
     show Hana at left
+
+label family_proud:
+    show hana
+    scene bg empty with fade
+
 
 
 
