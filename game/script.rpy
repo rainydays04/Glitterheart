@@ -209,7 +209,11 @@ label act_2:
             mc "Oh, yeah I was just looking through some books. I used to love dancing as a kid"
             narrator "The girl's eyes light up"
             idk "I love ballet! I'm Luna, by the way. I have been trying to start a dance club here, but I haven't gotten enough interest to get it started. "
-
+            narrator "Hana shakes the Luna's hand"
+            mc "I'm Hana. I thought you only needed interest to create club if it can connect to Tier missions or skill?"
+            l "That's the thing most people don't know. Dancing is a skill, it improves balance, flexibility, and strength. Many Luminaras practice dance to assist in magical control"
+            mc "Really? I never knew that, had I known I would have gotten into dance sooner"
+            
         "Look at poetry books":
             $ discovery_points += 3
     
