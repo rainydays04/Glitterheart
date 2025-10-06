@@ -7,6 +7,9 @@
 define mc = Character("Hana")
 define t = Character("Ms.Melissa")
 define c = Character("Cynthia")
+define l = Character("Luna")
+define idk = Character("???")
+
 #backgrounds
 image bg classroom = im.Scale("classroom.png",1920,1080)
 image bg empty = im.Scale("empty.png",1920,1080)
@@ -22,6 +25,7 @@ image Cynthia = im.Scale("Cynthia.png",1000,1000)
 #relationship points
 default Cynthia_points = 0
 default discovery_points = 0
+default meet_luna = False
 # The game starts here.
 
 label start:
@@ -192,6 +196,20 @@ label act_2:
             mc "But knowing the past is important, seeing how it effects current day and all."
         "Look at fiction books":
             $ discovery_points += 5
+            #add image or animation of her going through fiction books
+            mc "Oh look at this."
+            mc "I used to love reading this book as a kid. It's about a young ballerina who went into the real version of the Swan Lake ballet."
+            mc "I almost wanted to go into ballet after reading this."
+            #introduce new character who likes ballet and introduces herself
+            #idea her is for her to be a friend an mayb
+            $ meet_luna = True
+            narrator "You hear someone clearing their throat."
+            idk "Sorry, hi. I couldn't help but ovehear you mention ballet?"
+            narrator "Hana looks over to the see a girk with blonde hair and green eyes, towering slightly over her, but still managing to look so meek"
+            mc "Oh, yeah I was just looking through some books. I used to love dancing as a kid"
+            narrator "The girl's eyes light up"
+            idk "I love ballet! I'm Luna, by the way. I have been trying to start a dance club here, but I haven't gotten enough interest to get it started. "
+
         "Look at poetry books":
             $ discovery_points += 3
     
