@@ -261,7 +261,17 @@ label act_2:
             mc "Sorry, I was just in such a rush I didn't see them"
             narrator "Hana looks over at the girl and sees a name tag that read {i}Isla{/i}"
             i "Well now you know for next time"
+            narrator "An awkward silence falls upon the two"
+            mc "So...do you volunteer here?"
+            i "I am part of the library committee"
+            mc "We have one of those?"
+            narrator "Isla crosses her arms and rolls here eyes"
+            i "Yes, but the school doesn't advertise it nearly enough"
+            mc "Ah, I see. So what do you guys do?"
+            narrator "Her eyes sparkle slightly as she uncrosses her arms, standing straighter as she begins to speak"
+            i "We order all the books for the library here. Curate them, organize them, and set up events like book sales then donate them to kids"
             
+
 
 
             
