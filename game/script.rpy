@@ -271,7 +271,7 @@ label act_2:
 
             
             
-            narrator
+       
     
 
 
