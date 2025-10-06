@@ -11,6 +11,7 @@ define c = Character("Cynthia")
 image bg classroom = im.Scale("classroom.png",1920,1080)
 image bg empty = im.Scale("empty.png",1920,1080)
 image bg dorm = im.Scale("domRoom.png",1920,1080)
+image bg library = im.Scale("library.png",1920,1080)
 
 
 # character images
@@ -126,7 +127,7 @@ label start:
         "To make my family proud":
             #gain 3 discovery points
             $ discovery_points += 3
-            #flashbck family sneaking her books scene lwk
+            #flashbck family sneaking her books scene
             mc "They gave me everything I needed to achieve my dreams. I want to make them proud."
     mc "Ill write about that for my essay, hopefully its good enough."
     hide Hana with moveoutleft
@@ -159,6 +160,10 @@ label start:
     hide Melissa
     show Hana
     mc "...Yes I understand. Thank you Ms.Melissa."
+    hide Hana with moveoutleft
+    hide Melissa with fade
+    scene bg empty with fade
+    jump act_2
     
 
 
@@ -174,3 +179,10 @@ label start:
 
 
     return
+label act_2:
+    scene bg library with fade
+    show Hana
+    mc "Maybe I could find inspriation here..."
+    
+    return
+
