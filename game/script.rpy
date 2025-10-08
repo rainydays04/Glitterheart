@@ -17,7 +17,7 @@ image bg classroom = im.Scale("classroom.png",1920,1080)
 image bg empty = im.Scale("empty.png",1920,1080)
 image bg dorm = im.Scale("domRoom.png",1920,1080)
 image bg library = im.Scale("library.png",1920,1080)
-
+image bg village = im.Scale("village.png",1920,1080)
 
 # character images
 image Melissa = im.Scale("Melissa.png",1000,1000)
@@ -123,8 +123,11 @@ label start:
     #help??what are these options
     menu:
         "To prove the girls from my village wrong":
-            #gain 5 discovery points
-            #add a flashback scene later
+            hide Hana
+            show bg empty with fade
+            show bg village with fade
+            #dialouge about her friends or like girls from the village bullying her
+            #then fade back to her like...stuff
             $ discovery_points += 5
             mc "The girls in my village used to make fun of how my looks, my skill. Coming here, perhaps I could prove them wrong"
         "To learn more about magic":
@@ -270,6 +273,26 @@ label act_2:
             mc "Ah, I see. So what do you guys do?"
             narrator "Her eyes sparkle slightly as she uncrosses her arms, standing straighter as she begins to speak"
             i "We order all the books for the library here. Curate them, organize them, and set up events like book sales then donate them to kids"
+            narrator "Hana looks up to her with slight intrigue"
+            mc "How many people are in it?"
+            narrator "She shifts back and forth, biting the inside of her cheek"
+            i "Like...3, but we're really efficent"
+            mc "I could join if you li-"
+            i "YES"
+            i "Sorry, im just...really exicted. Meet me here at lets say...16:00?"
+            mc "Sure things"
+            #isla leave right
+            narrator "Isla skips of happily behind the library counter"
+    mc "My essay isn't due for a month, so why not spend some time"
+    mc "I think I cling to Cynthia to much, meeting new people will be good for me"
+    show bg empty with fade
+
+        
+
+
+
+
+
     return
 
 
