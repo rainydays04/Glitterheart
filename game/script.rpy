@@ -18,6 +18,7 @@ image bg empty = im.Scale("empty.png",1920,1080)
 image bg dorm = im.Scale("domRoom.png",1920,1080)
 image bg library = im.Scale("library.png",1920,1080)
 image bg village = im.Scale("village.png",1920,1080)
+image bg dorm2 = im.Scale("histDorm.png",1920,1080)
 
 # character images
 image Melissa = im.Scale("Melissa.png",1000,1000)
@@ -287,6 +288,20 @@ label act_2:
     mc "I think I cling to Cynthia to much, meeting new people will be good for me"
     show bg empty with fade
 
+    if meet_luna == True:
+        #library
+    if meet_isla == True:
+        #dance room
+    if meet_sophia== True:
+        show bg dorm2 with fade
+        #show sofia
+        #slide in hana
+        narrator "When Hana walks into the room, she sees Sofia sitting in the center of her room, surrounded by books, papers scatted across her bed"
+        mc "Sorry for walking in without invite"
+        narrator "She doesnt even look up from her work as she responds"
+        s "No no its fine, sit anywhere. Just finishing up a thought"
+        
+
         
 
 
@@ -294,10 +309,6 @@ label act_2:
 
 
     return
-
-
-
-            
             
        
     
