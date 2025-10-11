@@ -310,61 +310,89 @@ label act_2:
                     "What to inspect first?"
 
                     "Sticky notes":
-                        #see sofia's notes and what she does in a day
-                        #menu on
+                        narrator "The sticky notes are full of reminders or mini diary entries from the day. Notes like Sophia's favorite class"
+                        narrator "Sophia picks up on Hana leaning in on the sticky notes"
+                        $ Sophia_points-=2
+                        s "Hey, those are private."
+                        narrator "Hana jolts back in shock"
+                        mc "Sorry, I didn't know. They just seem so interesting. What are they notes on?"
+                        narrator "Sophia ponders a bit and then sits up"
+                        s "I like to write down my favorite thing about everyday. Helps me stay in the present and not the past"
+                        mc "That's really thoughtful"
+                        s "Yeah..."
+                        narrator "Sophia shifts over on the floor indicating that she is ready to talk"
+
                     "Books":
-                        #not history books but lots of shojo manga like magical girls stuff
-                    "Paper":
-                        #drawings and sketches of a art
+                        narrator "As Hana sits at the foot of Sophia's bed, Hana sees a pile of books there"
+                        narrator "As Hana looks through the books, expecting them to be another pile of history books, it seems as though they are instead Manga"
+                        mc "Hm..."
+                        narrator "Hana flips through them  as she waits for Sophia to finish her work"
+                        s "..."
+                        s "Oh are you looking at my books?"
+                        $ Sophia_points += 2
+                        mc "Oh yeah, sorry they just seemed so intersting"
+                        mc "Why do you have so much manga if I may ask?"
+                        narrator "Sophia perks up at the question"
+                        s "They are what made me want to study history in the first place. All the same genre over the same years and even better we see that play out in OUR world. Really how luck are we?"
+                        mc "I never thought of it like that"
+                        s "Well the more you know"
             "Desk":
                 narrator "Hana takes a seat at the desk by the window. Cleaner then the rest of the room, it neatly has a letter set on the table and a folder for all her classwork"
                 menu:
                     "Ask about mission":
+                        mc "Hey, I never asked, but your level got their assignments for the month, correct?"
+                        s "Yeah, I got a tier 3 assignment. I am partnering with a local university team to help with their mana study for prospective Luminaras at that level "
+                        mc "I didn't know there was such an assignment, thought it was being put into those teams to be that"
+                        s "They adjust based on level and interst. Again, most only got the Luminara route"
                     "Ask about letter set":
+                        mc "Your letter set is really pretty, you use it a lot?"
+                        $ Sophia_points+=4
+                        s "Oh yeah, I write to my parents a lot. Keep them upto date with my studies"
+                        mc "That is so sweet"
 
 
-            "Floor":
-                narrator "Hana looks around the room and decides that it would be better to sit next to her prospective friend"
-                narrator "Sophia looks up and smiles at her"
-                s "It wont take long, here, look"
-                narrator "She holds up a timeline map of the most notable alumni from Glitterheart, not only Luminaras but scholars, writers, and artists"
-                mc "Wow, I don't know about half these people"
-                s "Oooohh you definetly know them. See this one wrote the Stars before Time and this one acted in Lilie Deception"
-                mc "You're kidding..."
-                narrator "Sophia shakes her head, and pulls out what seems to be a box of books from behind her"
-                s "These are all the past yearbooks, feel free to look through them. I've scrapbooked some so that"
-                mc "Is that how you got all this information?"
-                s "Yes, and more. There used to be so many clubs in Glitterheart, but once more alumni started to become notable Luminaras well..."
-                s "They allocated more resources to their Lumins program and less to other possible paths"
-                mc "That actually sucks"
-                s "Yeah, but there are many students working around here to fix that, I'm doing my part"
-                mc "..."
-                mc "You know I never thought of exploring paths outside of being a Luminara"
-                s "Many people don't, but I think you should know its not the only option"
-                mc "Yeah"
-                narrator "Hana and Sophia scramble on the floor, exchanging books and information for hours"
-                #if i have the time maybe add menu for which books she reads
-                mc "It's almost curfew, I should head out."
-                s "Oh"
-                s "Oh well, do you wanna bring some books back?"
-                menu:
-                    "Yes":
-                        mc "Yes please"
-                        $ Sophia_points+=5
-                        narrator "Sophia scrambles and passes over three books to Hana"
-                        s "See how you like these and you can always come back "
-                        mc "Wow, this a lot, thank you Sophia."
-                        s "Of course, see you later"
+
+        narrator "Hana looks around the room and decides that it would be better to sit next to her prospective friend"
+        narrator "Sophia looks up and smiles at her"
+        s "It wont take long, here, look"
+        narrator "She holds up a timeline map of the most notable alumni from Glitterheart, not only Luminaras but scholars, writers, and artists"
+        mc "Wow, I don't know about half these people"
+        s "Oooohh you definetly know them. See this one wrote the Stars before Time and this one acted in Lilie Deception"
+        mc "You're kidding..."
+        narrator "Sophia shakes her head, and pulls out what seems to be a box of books from behind her"
+        s "These are all the past yearbooks, feel free to look through them. I've scrapbooked some so that"
+        mc "Is that how you got all this information?"
+        s "Yes, and more. There used to be so many clubs in Glitterheart, but once more alumni started to become notable Luminaras well..."
+        s "They allocated more resources to their Lumins program and less to other possible paths"
+        mc "That actually sucks"
+        s "Yeah, but there are many students working around here to fix that, I'm doing my part"
+        mc "..."
+        mc "You know I never thought of exploring paths outside of being a Luminara"
+        s "Many people don't, but I think you should know its not the only option"
+        mc "Yeah"
+        narrator "Hana and Sophia scramble on the floor, exchanging books and information for hours"
+        mc "It's almost curfew, I should head out."
+        s "Oh"
+        s "Oh well, do you wanna bring some books back?"
+        menu:
+            "Yes":
+                mc "Yes please"
+                $ Sophia_points+=5
+                $ discovery_points+=3
+                narrator "Sophia scrambles and passes over three books to Hana"
+                s "See how you like these and you can always come back "
+                mc "Wow, this a lot, thank you Sophia."
+                s "Of course, see you later"
                         
                         
 
-                    "No":
-                        $ Sophia_points-=3
-                        mc "Oh no that's alright, thank you though"
-                        narrator "Sophia looks a bit sad when told this, but manages a small grateful smile. Hana can't help but feel a bit guilty"
-                        s "That's ok! you probably have a lot to carry already with assignments and classes. See you around then?"
-                mc "See you"
-                hide mc with moveoutleft
+            "No":
+                $ Sophia_points-=3
+                mc "Oh no that's alright, thank you though"
+                narrator "Sophia looks a bit sad when told this, but manages a small grateful smile. Hana can't help but feel a bit guilty"
+                s "That's ok! you probably have a lot to carry already with assignments and classes. See you around then?"
+        mc "See you"
+        hide mc with moveoutleft
 
         show bg empty with fade
 
