@@ -30,6 +30,7 @@ default Cynthia_points = 0
 default discovery_points = 0
 default meet_luna = False
 default meet_sophia = False
+default Sophia_points = 0
 default meet_isla= False
 # The game starts here.
 
@@ -349,8 +350,23 @@ label act_2:
                 menu:
                     "Yes":
                         mc "Yes please"
-                    "No"
+                        $ Sophia_points+=5
+                        narrator "Sophia scrambles and passes over three books to Hana"
+                        s "See how you like these and you can always come back "
+                        mc "Wow, this a lot, thank you Sophia."
+                        s "Of course, see you later"
+                        
+                        
 
+                    "No":
+                        $ Sophia_points-=3
+                        mc "Oh no that's alright, thank you though"
+                        narrator "Sophia looks a bit sad when told this, but manages a small grateful smile. Hana can't help but feel a bit guilty"
+                        s "That's ok! you probably have a lot to carry already with assignments and classes. See you around then?"
+                mc "See you"
+                hide mc with moveoutleft
+
+        show bg empty with fade
 
         
 
