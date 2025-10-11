@@ -290,9 +290,9 @@ label act_2:
     show bg empty with fade
 
     if meet_luna == True:
-        #library
+        narrator "Hana walks into the library"
     if meet_isla == True:
-        #dance room
+        narrator "Hana walks into the library"
     if meet_sophia== True:
         show bg dorm2 with fade
         #show sofia
