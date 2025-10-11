@@ -300,7 +300,57 @@ label act_2:
         mc "Sorry for walking in without invite"
         narrator "She doesnt even look up from her work as she responds"
         s "No no its fine, sit anywhere. Just finishing up a thought"
-        
+        menu:
+            "Where should Hana sit?"
+
+            "Bed":
+                narrator "Hana goes to sit on the bed which has a pile of books and papers are the foot of it, on the wall there are sticky notes hand written"
+                menu:
+                    "What to inspect first?"
+
+                    "Sticky notes":
+                        #see sofia's notes and what she does in a day
+                        #menu on
+                    "Books":
+                        #not history books but lots of shojo manga like magical girls stuff
+                    "Paper":
+                        #drawings and sketches of a art
+            "Desk":
+                narrator "Hana takes a seat at the desk by the window. Cleaner then the rest of the room, it neatly has a letter set on the table and a folder for all her classwork"
+                menu:
+                    "Ask about mission":
+                    "Ask about letter set":
+
+
+            "Floor":
+                narrator "Hana looks around the room and decides that it would be better to sit next to her prospective friend"
+                narrator "Sophia looks up and smiles at her"
+                s "It wont take long, here, look"
+                narrator "She holds up a timeline map of the most notable alumni from Glitterheart, not only Luminaras but scholars, writers, and artists"
+                mc "Wow, I don't know about half these people"
+                s "Oooohh you definetly know them. See this one wrote the Stars before Time and this one acted in Lilie Deception"
+                mc "You're kidding..."
+                narrator "Sophia shakes her head, and pulls out what seems to be a box of books from behind her"
+                s "These are all the past yearbooks, feel free to look through them. I've scrapbooked some so that"
+                mc "Is that how you got all this information?"
+                s "Yes, and more. There used to be so many clubs in Glitterheart, but once more alumni started to become notable Luminaras well..."
+                s "They allocated more resources to their Lumins program and less to other possible paths"
+                mc "That actually sucks"
+                s "Yeah, but there are many students working around here to fix that, I'm doing my part"
+                mc "..."
+                mc "You know I never thought of exploring paths outside of being a Luminara"
+                s "Many people don't, but I think you should know its not the only option"
+                mc "Yeah"
+                narrator "Hana and Sophia scramble on the floor, exchanging books and information for hours"
+                #if i have the time maybe add menu for which books she reads
+                mc "It's almost curfew, I should head out."
+                s "Oh"
+                s "Oh well, do you wanna bring some books back?"
+                menu:
+                    "Yes":
+                        mc "Yes please"
+                    "No"
+
 
         
 
