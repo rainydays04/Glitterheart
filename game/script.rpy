@@ -32,6 +32,7 @@ default meet_luna = False
 default meet_sophia = False
 default Sophia_points = 0
 default meet_isla= False
+default isla_points = 0
 # The game starts here.
 
 label start:
@@ -219,7 +220,7 @@ label act_2:
             mc "And I'm assuming history and become a scholar is your way of serving society?"
             s "Society and myself"
             mc "I see"
-            s "I can show you more of what I do if you want? I usually hang out with a study group at the cafe"
+            s "I can show you more of what I do if you want? My dorm is in the east wing and you can swing by after classes"
             mc "I'll see if I can come by"
             s "Alright!"
             narrator "Sophie stumbles off, moving side to side to ensure none of her books fall"        
@@ -289,9 +290,88 @@ label act_2:
     mc "I think I cling to Cynthia to much, meeting new people will be good for me"
     show bg empty with fade
 
-    if meet_luna == True:
-        narrator "Hana walks into the library"
     if meet_isla == True:
+        narrator "The library is not exactly empty when Hana walks in, but it's enought to calm her mind down from the hectic day"
+        narrator "Isla is behind the counter, books floating around her under her control as Hana approaches"
+        menu:
+            "Wait for her to finish":
+                narrator "Hana waits there patiently for Hana to notice her presence. In the quiet of the library, Isla's humming is loud enough to make out"
+                narrator "After a few minutes, Isla looks up at Hana, smiling as she notices her"
+                i "Hey! You made it, I wasn't sure you were gonna show."
+                mc "I wanted to check out the committee and you know, meet others. And talk to you more of course"
+                i "Of course of course. The rest are on their assignments at the moment. Many are Tier 2 and 3 up so they went out as soon as assignment came out yesterday"
+                mc "Ah I see"
+                menu :
+                    "Ask about her assignment"
+                    "Yes":
+                        mc "What about your assignment for this month?"
+                        i "..."
+                        narrator "She does a small spin, arms out gesturing to the room, the library"
+                        i "This, currating spell books for teachers for this class semester. Helping students with books"
+                        mc "I thought that this was for volunteering?"
+                        i "It is, but it's my assignment for the month and probably the rest of the semester too since I spend so much time here "
+                        mc "But, will you ever get higher tier assignments?"
+                        i "I will, actually I'm still on track to be a Luminara"
+                        mc "How is that if you don't go on missions?"
+                        narrator "She gives Hana a mischevious look as she reaches for her phone and shows her an email"
+                        i "ok, im not suppose to tell anyone this, but there are several people, missions even, that involve transferring top secret books"
+                        mc "Oh my-"
+                        i "STARS I KNOW"
+                        $ discovery_points+=5
+
+                    "No":
+                        mc "So you're doing all this by yourself? Let me help"
+                        i "It's alright, I do it alone most days"
+                        mc "Well now you have me"
+                        narrator "Hana takes a stack of books and begins organizing them to which Isla bows slightly to show her gratitude"
+                    
+            "Say Hi to her":
+                $ isla_points +=3
+                narrator "Hana taps her shoulder"
+                mc "Hi, Isla"
+                i "Ah! Oh my stars you scared me"
+                mc "Oh- sorry sorry"
+                i "It is alright, honestly. It's just rare  for someone to talk to me in the libarary especially at the beginning of the month"
+                mc "What about the other committee members?"
+                i "They are often out on their missions, second and third tiers"
+                menu :
+                    "Ask about her assignment"
+                    "Yes":
+                        mc "What about your assignment for this month?"
+                        i "..."
+                        narrator "She does a small spin, arms out gesturing to the room, the library"
+                        i "This, currating spell books for teachers for this class semester. Helping students with books"
+                        mc "I thought that this was for volunteering?"
+                        i "It is, but it's my assignment for the month and probably the rest of the semester too since I spend so much time here "
+                        mc "But, will you ever get higher tier assignments?"
+                        i "I will, actually I'm still on track to be a Luminara"
+                        mc "How is that if you don't go on missions?"
+                        narrator "She gives Hana a mischevious look as she reaches for her phone and shows her an email"
+                        i "ok, im not suppose to tell anyone this, but there are several people, missions even, that involve transferring top secret books"
+                        mc "Oh my-"
+                        i "STARS I KNOW"
+                        $ discovery_points+=5
+
+                    "No":
+                        mc "So you're doing all this by yourself? Let me help"
+                        i "It's alright, I do it alone most days"
+                        mc "Well now you have me"
+                        narrator "Hana takes a stack of books and begins organizing them to which Isla bows slightly to show her gratitude"
+                i "Anyways, you said you had an interest in the committee?"
+                mc "Yeah, and also spending time at the library more"
+                i "Oh yeah, I've seen you studying here a lot. Late nights too. You spend a lot of time in the training grounds too, correct?"
+                mc "Ah yes,"
+                #embarred look hana
+                i "Well, hopefully the library committee is not too much strife on you. We get a few perks too"
+                mc "Oh?"
+                i "We can choose the books ordered. Say I want to get the newest book by my favorite author. I could get it for a certain section and keep a copy for myself. "
+                i "Only one book though for every order, which we make offical order like that every few weeks."
+                mc " Oh I see"
+                i "What books are you intested in?"
+                
+                
+
+    if meet_luna == True:
         narrator "Hana walks into the library"
     if meet_sophia== True:
         show bg dorm2 with fade
@@ -383,7 +463,7 @@ label act_2:
                 s "See how you like these and you can always come back "
                 mc "Wow, this a lot, thank you Sophia."
                 s "Of course, see you later"
-                        
+                     
                         
 
             "No":
@@ -397,7 +477,6 @@ label act_2:
         show bg empty with fade
 
         
-
 
 
 
