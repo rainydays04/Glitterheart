@@ -433,18 +433,33 @@ label act_2:
                 l "So are you"
                 mc "You haven't even seen me dance before?"
                 l "I don't need to see you dance to know your a good dancer"
-                narrator "She summons a simple spell, one that causes the lights to dim and strings of light show in parts of the room"
-                mc "What is this"
-                l "Tier 3 spell magic. Honing magic from when you dance. It focuses your magic"
-                mc "Woah"
-                l "Neat right? I've been having the magic fill the room during dances. Each dance produces a different kind of magic"
-                narrator "She takes the newest looking string and brings it over to show. It is pink and firey"
-                l "Learn to feel it, learn to hone it by producing it "
-                mc "So wait let me get this straight. You have the physical form of the magic by..dancing?"
-                l "Exactly. Think like making a potion"
+        
             "Join her":
+                $ discovery_points+=10
                 narrator "After observing the general beat and rhythm. Hana steps forward quietly, her reflection next to Luna's in the mirror"
-                
+                l "Didn't think you'd be so quick to follow"
+                mc "I'm a quick learner"
+                narrator "Hana dances with the few basics hip hop moves she knows, but generally leaving it up to the music, while luna seems more rehearsed"
+                narrator "As the music stops, the sound of the two girls panting fills the room"
+                l "You did good. Your a good dancer"
+                mc "Some skills you don't loose"
+                narrator "Hana felt something she hadn't felt before when she danced. Like a warm feeling in her chest. She put her hand over it"
+                l "Ah so you do feel it. I knew you were a good dancer"
+                mc "What? What do you mean"
+        narrator "She summons a simple spell, one that causes the lights to dim and strings of light show in parts of the room"
+        mc "What is this"
+        l "Tier 3 spell magic. Honing magic from when you dance. It focuses your magic"
+        mc "Woah"
+        l "Neat right? I've been having the magic fill the room during dances. Each dance produces a different kind of magic"
+        narrator "She takes the newest looking string and brings it over to show. It is pink and firey"
+        l "Learn to feel it, learn to hone it by producing it"
+        mc "So wait let me get this straight. You have the physical form of the magic by..dancing?"
+        l "Exactly. Think like making a potion"
+        
+       
+
+               
+
     if meet_sophia== True:
         show bg dorm2 with fade
         #show sofia
