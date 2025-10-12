@@ -19,6 +19,7 @@ image bg dorm = im.Scale("domRoom.png",1920,1080)
 image bg library = im.Scale("library.png",1920,1080)
 image bg village = im.Scale("village.png",1920,1080)
 image bg dorm2 = im.Scale("histDorm.png",1920,1080)
+image bg danceRoom = im.Scale("dance.png",1920,1080)
 
 # character images
 image Melissa = im.Scale("Melissa.png",1000,1000)
@@ -291,6 +292,7 @@ label act_2:
     show bg empty with fade
 
     if meet_isla == True:
+        show bg library with fade
         narrator "The library is not exactly empty when Hana walks in, but it's enought to calm her mind down from the hectic day"
         narrator "Isla is behind the counter, books floating around her under her control as Hana approaches"
         menu:
@@ -417,15 +419,32 @@ label act_2:
                     narrator "Isla begins to clean up"
                     i "I'll see you around?"
                     mc "Yeah, see you"
-
-
-
-
-
-                
-
     if meet_luna == True:
-        narrator "Hana walks into the library"
+        show bg danceRoom with fade
+        narrator "The music room is dusty from disuse,instruments pushes aside. Luna is in the centre dancing in front of the mirror to a hip-hop song."
+        menu:
+            "Watch her":
+                narrator "Hana leans against the door nonchalantly, crossing her arms as she watches Luna, mesmerized by her movements"
+                narrator "Once the music stops, Luna is panting and staring down at the floor, already tired from all her physical efforts"
+                mc "Wow"
+                narrator "Luna looks over in Hana's direction and smiles"
+                l "Enjoying the show?"
+                mc "Yeah, well your a good dancer"
+                l "So are you"
+                mc "You haven't even seen me dance before?"
+                l "I don't need to see you dance to know your a good dancer"
+                narrator "She summons a simple spell, one that causes the lights to dim and strings of light show in parts of the room"
+                mc "What is this"
+                l "Tier 3 spell magic. Honing magic from when you dance. It focuses your magic"
+                mc "Woah"
+                l "Neat right? I've been having the magic fill the room during dances. Each dance produces a different kind of magic"
+                narrator "She takes the newest looking string and brings it over to show. It is pink and firey"
+                l "Learn to feel it, learn to hone it by producing it "
+                mc "So wait let me get this straight. You have the physical form of the magic by..dancing?"
+                l "Exactly. Think like making a potion"
+            "Join her":
+                narrator "After observing the general beat and rhythm. Hana steps forward quietly, her reflection next to Luna's in the mirror"
+                
     if meet_sophia== True:
         show bg dorm2 with fade
         #show sofia
