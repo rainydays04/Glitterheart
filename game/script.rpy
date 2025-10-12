@@ -368,7 +368,60 @@ label act_2:
                 i "Only one book though for every order, which we make offical order like that every few weeks."
                 mc " Oh I see"
                 i "What books are you intested in?"
-                
+                menu:
+                    "Romance":
+                        mc "Oh I like romance books"
+                        i "Oh I don't read much romance books, but I do know a few good recommendations."
+                        mc "Oh yeah, I just like seeing those connections between people you know. Especailly in young adult"
+                        mc "Though it boggles me how people have time for that"
+                        narrator "Isla walks over with a pile of books, looking up at her"
+                        i "For what?"
+                        mc "I mean like putting time into a whole romantic relationship"
+                        i "Well, I think if you really love someone you find time for them."
+                        mc "But during your school years?"
+                        i "Well everyone does it to some extent. Maybe not for a person"
+                        i "I find time for reading between studying and found a way to involve what I love with what I want to do"
+                        mc "Oh... Intresting"
+                        i "Well, what do you love doing?"
+                        mc "Well um.."
+                        mc "Reading every now and then, but most of it has been for school lately"
+                        i "Well maybe you should get back to it, just for what you wanna do"
+                        mc "gosh I had not have had time for romance novels in quite a bit"
+                        narrator "Isla hands over a pileof romance novels"
+                        i "I've been meaning to explore more genres, right? So uh, I have a list of romance books that maybe we could read together. Book club kinda vibe"
+                        mc "i'd love that yeah. Reading these together and checking back up with each other?"
+                        i "Yes yes. Here we could do..."
+                        $ isla_points +=10
+                        $ discovery_points +=10
+                        narrator "They two chose out a book and planned to pic"
+                    "Horror":
+                        mc "I like horror novels, I like the thrill"
+                        i "My poor heart could not handle that"
+                        mc "Oh I could give you some reccomendations, albeit it has been a while since I read anything really"
+                        i "Sure, I always want to try something new"
+                        $ isla_points +=8
+                        $ discovery_points+=5
+                        narrator "Isla and Hana spent several hours conversing about different horror novel. Isla warming up to the genre"
+            
+                    "Classics":
+                        mc "I'm into the classics"
+                        i "Me too! Gosh I absolutely love Janie Heartwell's work"
+                        mc "I have actually been meaning to get into more of her work."
+                        i "I could definetly you show you!"
+                        mc "I'd love that"
+                        narrator "Isla introduced Hana to several books, going through different classics"
+                    narrator "The sun starts to set and students begin to leave"
+                    i "Oh my we've been here for hours"
+                    mc "Oh right, I should head back to my dorm"
+                    i "Yeah same"
+                    narrator "Isla begins to clean up"
+                    i "I'll see you around?"
+                    mc "Yeah, see you"
+
+
+
+
+
                 
 
     if meet_luna == True:
@@ -482,10 +535,3 @@ label act_2:
 
 
     return
-            
-       
-    
-
-
-
-
