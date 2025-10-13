@@ -26,7 +26,7 @@ image bg danceRoom = im.Scale("dance.png",1920,1080)
 image Melissa = im.Scale("melissa.png",1000,1000)
 image Hana = im.Scale("hana.png",1000,1000)
 image Cynthia = im.Scale("cynthia.png",1000,1000)
-image Luna
+
 image Sophia= im.Scale("sophia.png",1000,1000)
 image Isla=im.Scale("isla.png",1000,1000)
 
