@@ -455,11 +455,35 @@ label act_2:
         l "Learn to feel it, learn to hone it by producing it"
         mc "So wait let me get this straight. You have the physical form of the magic by..dancing?"
         l "Exactly. Think like making a potion"
-        
-       
-
-               
-
+        narrator "She looks around the room with the different stings of magic around the room, different colors and textures"
+        mc "I never even got close to weilding tier 3 magic"
+        l "Well now you have, just from dancing with me."
+        narrator "Hana looks star-struck, walks forward to Luna"
+        mc "Teach me more"
+        narrator "Luna laughs softly st her eagerness"
+        l "For the dance or the magic?"
+        mc "I well obviouslt the-"
+        l "I've seen how you work"
+        l "Day and night at the library or training grounds just to reach a higher grade, tier"
+        narrator "She steps forward now, her gaze challenging rather than accusatory"
+        l "I'll teach you more. Only if you have the will to learn more because you like it. You like dancing. Not because it gets you a leg up"
+        mc "...I like dancing"
+        l "Good. Now learn because of that. Let your joy be the focus. Not whatever else there is to this"
+        narrator "Hana nods with a new view of determination"
+        mc "Alright. Lets do this"
+        narrator "For the next two hours, the girls dance together to different songs. CLassical, pop, hip-hop, rock. Nothng organized, except Luna teaching Hana some routines here in there."
+        narrator "By the end though they decide to work on a duet to showcase at the end of the next month"
+        mc "Oh my stars"
+        mc "Stars, its been a while since I have had so much fun"
+        l "Well don't let it be the last"
+        mc "Oh certainly not"
+        narrator "The two lay on the ground of the dance room, looking at the strands of magic they had created in the past hours"
+        mc "So, how do we use them?"
+        l "That is a tale for another time"
+        l "It's late and it's curfew. I'll be so honest. I am exhausted"
+        mc "Yeah. See tyou in the morning?"
+        l "See you then"
+        show scene bg empty with fade
     if meet_sophia== True:
         show bg dorm2 with fade
         #show sofia
