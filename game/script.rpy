@@ -12,6 +12,7 @@ define s = Character("Sophie")
 define i = Character("Isla")
 define idk = Character("???")
 
+
 #backgrounds
 image bg classroom = im.Scale("classroom.png",1920,1080)
 image bg empty = im.Scale("empty.png",1920,1080)
@@ -196,20 +197,21 @@ label start:
 
 label act_2:
     scene bg library with fade 
-    show Hana with moveinleft
+    show Hana at left
     mc "Perhaps here I can find some inspiration. History books maybe or perhaps some literature."
     menu:
         "Look at history books":
             $ discovery_points -= 2
             $ meet_sophia = True
-            #add image or animation of her going through history books
+            
+             
             mc "I never really enjoyed history. Lots of dates and names to remember."
             mc "..."
             mc "But knowing the past is important, seeing how it effects current day and all."
             narrator "From the other side of the shelf, Hana hears someone snickering. A cheery know-it-all voice jeering between the books."
             idk "It is! History is one of the most important subjects you can learn!"
             narrator "From the side of the shelf, a girl with curly brown and glasses steps out, a pile of books in hand"
-            #add image of sophie
+            show Sophia
             narrator "The short girl reaches her hand out to Hana with a bright smile, struggling to balance the books in one hand"
             s "Hi Hi! Sophie! It's rare to find someone ACTAUALLY interested in history around here!"
             narrator "To say her enthusiasm is overwhelming would be an understatement.Hana shakes Sophie's hand"
@@ -234,7 +236,9 @@ label act_2:
             s "I can show you more of what I do if you want? My dorm is in the east wing and you can swing by after classes"
             mc "I'll see if I can come by"
             s "Alright!"
-            narrator "Sophie stumbles off, moving side to side to ensure none of her books fall"        
+            hide Sophia
+            narrator "Sophie stumbles off, moving side to side to ensure none of her books fall"       
+            
         "Look at fiction books":
             $ discovery_points += 5
             #add image or animation of her going through fiction books
@@ -244,6 +248,7 @@ label act_2:
             #introduce new character who likes ballet and introduces herself
             #idea her is for her to be a friend an mayb
             $ meet_luna = True
+            show Luna at right
             narrator "You hear someone clearing their throat."
             idk "Sorry, hi. I couldn't help but ovehear you mention ballet?"
             narrator "Hana looks over to the see a girl with blonde hair and green eyes, towering slightly over her, but still managing to look so meek"
@@ -258,7 +263,7 @@ label act_2:
             l "Well, if you still want to try, I already have the room reserved. You can come by after class today?"
             mc "You know what, sure why not"
             l "Great, see then!"
-            #luna leaves the scene
+            hide Luna
             narrator "Luna waves goodbye and skips off down the aisle of the library"
             
         "Look at poetry books":
@@ -270,7 +275,7 @@ label act_2:
             #animation of her finding some poetry books, a book falling
             idk "Careful!"
             narrator "To her suprise, no book hits her head. Instead it is a shrill voice from behind her"
-            #show Isla
+            show Isla at right
             $ meet_isla = True
             narrator "Hana turns around and sees a brunette with green eyes, frozen midway through a karate chop motion. The book Hana was trying to reach for now having flown across the isle"
             idk "We have stools you know?"
@@ -295,7 +300,7 @@ label act_2:
             i "YES"
             i "Sorry, im just...really exicted. Meet me here at lets say...16:00?"
             mc "Sure things"
-            #isla leave right
+            hide Isla
             narrator "Isla skips of happily behind the library counter"
     mc "My essay isn't due for a month, so why not spend some time"
     mc "I think I cling to Cynthia to much, meeting new people will be good for me"
@@ -303,7 +308,9 @@ label act_2:
 
     if meet_isla == True:
         show bg library with fade
-        narrator "The library is not exactly empty when Hana walks in, but it's enought to calm her mind down from the hectic day"
+        show Hana at left
+        narrator "The library is not exactly empty when Hana walks in, but it's enough to calm her mind down from the hectic day"
+        show Isla at right
         narrator "Isla is behind the counter, books floating around her under her control as Hana approaches"
         menu:
             "Wait for her to finish":
@@ -430,10 +437,14 @@ label act_2:
                 narrator "Isla begins to clean up"
                 i "I'll see you around?"
                 mc "Yeah, see you"
+                hide Isla
+                hide Hana
         jump isla_ending
     if meet_luna == True:
         show bg danceRoom with fade
+        show Hana at left
         narrator "The music room is dusty from disuse,instruments pushes aside. Luna is in the centre dancing in front of the mirror to a hip-hop song."
+        show Luna at right
         menu:
             "Watch her":
                 narrator "Hana leans against the door nonchalantly, crossing her arms as she watches Luna, mesmerized by her movements"
@@ -495,12 +506,15 @@ label act_2:
         l "It's late and it's curfew. I'll be so honest. I am exhausted"
         mc "Yeah. See tyou in the morning?"
         l "See you then"
+        hide Hana
+        hide Luna
         show scene bg empty with fade
-        jump luna_ending
+
+     
     if meet_sophia== True:
         show bg dorm2 with fade
-        #show sofia
-        #slide in hana
+        show Sophia at right
+        show Hana at left
         narrator "When Hana walks into the room, she sees Sofia sitting in the center of her room, surrounded by books, papers scatted across her bed"
         mc "Sorry for walking in without invite"
         narrator "She doesnt even look up from her work as she responds"
@@ -596,8 +610,8 @@ label act_2:
                 narrator "Sophia looks a bit sad when told this, but manages a small grateful smile. Hana can't help but feel a bit guilty"
                 s "That's ok! you probably have a lot to carry already with assignments and classes. See you around then?"
         mc "See you"
-        hide mc with moveoutleft
-
+        hide Hana with moveoutleft
+        hide Sophia
         show bg empty with fade
         jump sophia_ending
 
@@ -611,6 +625,8 @@ label isla_ending:
     if romance == True:
         narrator "Throughout the weeks they both shared the sentiment of the romance book they were reading"
         show scene bg library
+        show Isla
+        show Hana
         i "Did you finish chapter 12? Oh my gosh the slow burn is killing me"
         mc "Honestly I think you're just impatient. They should wait for their relationship to build up"
         i "Yes, but what if they just have that close of a connection? Why tease the idea of romance that is clearly there and waste time being out of a relationship rather then be in it?"
@@ -624,9 +640,11 @@ label isla_ending:
         narrator "She rolls her eyes and sighs dramatically"
         i "Alright, deny the writing suggestions of the avid reader"
         mc "Oh come on, here lets look at the next chapter and-"
-        #scene end hide hana
+        
     if horror ==True:
         show scene bg dorm
+        show Hana at left
+        show Isla at right
         narrator "Over the next few weeks, Hana invites Isla over to her dorm to talk about the different horror books"
         mc "I'm just saying. It should not be physically possible to do that to someone's body"
         i "Well it is, there are studies on it"
@@ -643,7 +661,9 @@ label isla_ending:
         mc "No."
         i "What a __"
     if classic ==True:
-        narrator "The next few weeks, Hana would go over to Isla's dorm room to get book suggestions fot classics"
+        narrator "The next few weeks, Hana would go over to Isla's dorm room to get book suggestions for classics"
+        show Hana at left
+        show Isla at right
         mc "I mean, sure the point of the book is for them to be complete idiots, but I that doesn't mean that I have to like it"
         i "it's literature"
         mc "It's juvenile"
@@ -658,9 +678,12 @@ label isla_ending:
         mc "It's almost done and I'm submitting it tomorrow. No need"
         i "Come onnn"
         mc "Isla, read your book"
-
+    hide Hana
+    hide Isla
     show scene bg empty with fade
     show scene bg classroom with fade
+    show Melissa at right
+    show Hana at left
     t "So, you rewrote your assignment?"
     mc "Yeah. I took time and here is what I wrote"
     narrator "Hana passes over the new essay to Ms. Melissa to which she nodded and sat down at her desk"
@@ -684,13 +707,15 @@ label isla_ending:
 label sophia_ending:
     if books_taken == True:
         show scene bg dorm
-        show Hana 
+        show Hana at left
+        show Sophia at right
         narrator "Hana has been pouring over the new books Sophia had given her. Learning about new civilizations and historical figures"
         narrator "Not only with history of the world, but also with the history of Glitterheart"
         mc "So many famous actresses and artists came from here. How come we don't we allocate resources to those fields."
     if books_taken == False:
         show scene bg dorm2
-        show Hana 
+        show Hana at left
+        show Isla at right
         mc "So you're telling me that there are a bunch of famous actresses and artist cam from here?"
         s "Yes, but what's even better is that some of them were also Luminaras in their time."
         s "Necessity and want do not need to co-exist in the same tasks"
@@ -702,10 +727,12 @@ label sophia_ending:
     mc "Oh shoo-"
     mc "I mean I completely forgot about that"
     narrator "Hana scrambles for her notebook and begins writing"
-    show scene bg classroom
-    show Hana at left
-    show scene bg empty with fade
+    hide Hana
+    hide Sophia
+
     show scene bg classroom with fade
+    show Hana at left
+    show Melissa at right
     t "So, you rewrote your assignment?"
     mc "Yeah. I took time and here is what I wrote"
     narrator "Hana passes over the new essay to Ms. Melissa to which she nodded and sat down at her desk"
@@ -730,4 +757,4 @@ label sophia_ending:
 
 
 
-label luna_ending: 
+
