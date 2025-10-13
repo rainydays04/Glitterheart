@@ -508,7 +508,7 @@ label act_2:
         l "See you then"
         hide Hana
         hide Luna
-        show scene bg empty with fade
+        scene bg empty with fade
 
      
     if meet_sophia== True:
@@ -624,7 +624,7 @@ label act_2:
 label isla_ending:
     if romance == True:
         narrator "Throughout the weeks they both shared the sentiment of the romance book they were reading"
-        show scene bg library
+        scene bg library
         show Isla
         show Hana
         i "Did you finish chapter 12? Oh my gosh the slow burn is killing me"
@@ -642,7 +642,7 @@ label isla_ending:
         mc "Oh come on, here lets look at the next chapter and-"
         
     if horror ==True:
-        show scene bg dorm
+        scene bg dorm
         show Hana at left
         show Isla at right
         narrator "Over the next few weeks, Hana invites Isla over to her dorm to talk about the different horror books"
@@ -680,8 +680,8 @@ label isla_ending:
         mc "Isla, read your book"
     hide Hana
     hide Isla
-    show scene bg empty with fade
-    show scene bg classroom with fade
+    scene bg empty with fade
+    scene bg classroom with fade
     show Melissa at right
     show Hana at left
     t "So, you rewrote your assignment?"
@@ -706,14 +706,14 @@ label isla_ending:
     t "You-"
 label sophia_ending:
     if books_taken == True:
-        show scene bg dorm
+        scene bg dorm
         show Hana at left
         show Sophia at right
         narrator "Hana has been pouring over the new books Sophia had given her. Learning about new civilizations and historical figures"
         narrator "Not only with history of the world, but also with the history of Glitterheart"
         mc "So many famous actresses and artists came from here. How come we don't we allocate resources to those fields."
     if books_taken == False:
-        show scene bg dorm2
+        scene bg dorm2
         show Hana at left
         show Isla at right
         mc "So you're telling me that there are a bunch of famous actresses and artist cam from here?"
@@ -730,7 +730,7 @@ label sophia_ending:
     hide Hana
     hide Sophia
 
-    show scene bg classroom with fade
+    scene bg classroom with fade
     show Hana at left
     show Melissa at right
     t "So, you rewrote your assignment?"
