@@ -22,9 +22,12 @@ image bg dorm2 = im.Scale("histDorm.png",1920,1080)
 image bg danceRoom = im.Scale("dance.png",1920,1080)
 
 # character images
-image Melissa = im.Scale("Melissa.png",1000,1000)
-image Hana = im.Scale("Hana.png",1000,1000)
-image Cynthia = im.Scale("Cynthia.png",1000,1000)
+image Melissa = im.Scale("melissa.png",1000,1000)
+image Hana = im.Scale("hana.png",1000,1000)
+image Cynthia = im.Scale("cynthia.png",1000,1000)
+image Luna
+image Sophia= im.Scale("sophia.png",1000,1000)
+image Isla=im.Scale("isla.png",1000,1000)
 
 #relationship points
 default Cynthia_points = 0
