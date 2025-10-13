@@ -34,7 +34,14 @@ default meet_sophia = False
 default Sophia_points = 0
 default meet_isla= False
 default isla_points = 0
+#isla ednings 
+default romance =False
+default horror =False
+default classic = False
+#Sophia endings
+default books_taken =False
 # The game starts here.
+
 
 label start:
 
@@ -372,6 +379,7 @@ label act_2:
                 i "What books are you intested in?"
                 menu:
                     "Romance":
+
                         mc "Oh I like romance books"
                         i "Oh I don't read much romance books, but I do know a few good recommendations."
                         mc "Oh yeah, I just like seeing those connections between people you know. Especailly in young adult"
@@ -412,13 +420,14 @@ label act_2:
                         i "I could definetly you show you!"
                         mc "I'd love that"
                         narrator "Isla introduced Hana to several books, going through different classics"
-                    narrator "The sun starts to set and students begin to leave"
-                    i "Oh my we've been here for hours"
-                    mc "Oh right, I should head back to my dorm"
-                    i "Yeah same"
-                    narrator "Isla begins to clean up"
-                    i "I'll see you around?"
-                    mc "Yeah, see you"
+                narrator "The sun starts to set and students begin to leave"
+                i "Oh my we've been here for hours"
+                mc "Oh right, I should head back to my dorm"
+                i "Yeah same"
+                narrator "Isla begins to clean up"
+                i "I'll see you around?"
+                mc "Yeah, see you"
+        jump isla_ending
     if meet_luna == True:
         show bg danceRoom with fade
         narrator "The music room is dusty from disuse,instruments pushes aside. Luna is in the centre dancing in front of the mirror to a hip-hop song."
@@ -484,6 +493,7 @@ label act_2:
         mc "Yeah. See tyou in the morning?"
         l "See you then"
         show scene bg empty with fade
+        jump luna_ending
     if meet_sophia== True:
         show bg dorm2 with fade
         #show sofia
@@ -586,10 +596,135 @@ label act_2:
         hide mc with moveoutleft
 
         show bg empty with fade
+        jump sophia_ending
 
-        
+
 
 
 
 
     return
+label isla_ending:
+    if romance == True:
+        narrator "Throughout the weeks they both shared the sentiment of the romance book they were reading"
+        show scene bg library
+        i "Did you finish chapter 12? Oh my gosh the slow burn is killing me"
+        mc "Honestly I think you're just impatient. They should wait for their relationship to build up"
+        i "Yes, but what if they just have that close of a connection? Why tease the idea of romance that is clearly there and waste time being out of a relationship rather then be in it?"
+        mc"...Are you alright?"
+        i"Yeah, why?"
+        mc "You seem to have put a lot of thought into...all that"
+        i "Yeah Im fine. Hey how is that essay coming up for Ms.Melissa?"
+        mc "I think I'm getting a better idea of it. Why I came to Glitterheart to become a Luminara"
+        i "Mind if I listen?"
+        mc "Think I'll save it for the teacher's eyes... don't want to jinx it"
+        narrator "She rolls her eyes and sighs dramatically"
+        i "Alright, deny the writing suggestions of the avid reader"
+        mc "Oh come on, here lets look at the next chapter and-"
+        #scene end hide hana
+    if horror ==True:
+        show scene bg dorm
+        narrator "Over the next few weeks, Hana invites Isla over to her dorm to talk about the different horror books"
+        mc "I'm just saying. It should not be physically possible to do that to someone's body"
+        i "Well it is, there are studies on it"
+        mc "You cannot be serioudly considering this is true. After crying for two hours about it?"
+        i "I told you not to mind it. It wasn't crying. It was simply... suprise"
+        mc "Oh my stars. Here, show me the part you wre at"
+        i "uhh.... this page"
+        mc "mmm mhm...you do know this book is for middle schoolers?"
+        i "Don't insult me"
+        mc "Not an insult. It's the truth"    
+        i "Well whatever. Hey how is the essay for Ms.Melissa going"
+        mc "Wow ok. Deflection much? Going good. I'm turning it in tomorrow"
+        i "Can i read-"
+        mc "No."
+        i "What a __"
+    if classic ==True:
+        narrator "The next few weeks, Hana would go over to Isla's dorm room to get book suggestions fot classics"
+        mc "I mean, sure the point of the book is for them to be complete idiots, but I that doesn't mean that I have to like it"
+        i "it's literature"
+        mc "It's juvenile"
+        narrator "Isla holds her hands up in surrender"
+        i "Sure, call it whatever, but there is certainly a reason for it's fame"
+        mc "Not all things are famous for good reason, Isla"
+        i "This one isss"
+        narrator "Hana rolls her eyes"
+        mc "Whaetever. Speaking of literature, I need to add the finishing touches to my essay"
+        narrator "Isla perks up at that"
+        i "Can I help?"
+        mc "It's almost done and I'm submitting it tomorrow. No need"
+        i "Come onnn"
+        mc "Isla, read your book"
+
+    show scene bg empty with fade
+    show scene bg classroom with fade
+    t "So, you rewrote your assignment?"
+    mc "Yeah. I took time and here is what I wrote"
+    narrator "Hana passes over the new essay to Ms. Melissa to which she nodded and sat down at her desk"
+    mc "{i}Is she really grading it in front of me again? Damn{/i}"
+    t "You wrote about your passion this time?"
+    mc "Yes"
+    t "Explain you passion for me. Verbally"
+    mc "Well, in the time you gave me I explored some things and I realized that I do truly love Glitterheart"
+    mc "The classes, it's purpose. The people. I learned to love things I already loved more then before"
+    mc "I want to become a Luminara because of those people. To learn to appriciate what I already have even more and protect it"
+    narrator "Ms.Melissa smiled simply down at Hana"
+    t "You know, your performance was never bad Hana, but it always could have been better"
+    t "You only did things out of necessity. All of it. I could give you a Tier 3 assignment and you would complete it successfully. I'm sure of it"
+    t "But you wouldn't have truly liked doing it. You showed nothing of what you liked doing and I couldn't give you missions based on it"
+    mc "So you gave me this month to figure it out"
+    t "Precisely"
+    t "So this month. You earned a new assigment"
+    mc "..."
+    mc "Oh?"
+    t "You-"
+label sophia_ending:
+    if books_taken == True:
+        show scene bg dorm
+        show Hana 
+        narrator "Hana has been pouring over the new books Sophia had given her. Learning about new civilizations and historical figures"
+        narrator "Not only with history of the world, but also with the history of Glitterheart"
+        mc "So many famous actresses and artists came from here. How come we don't we allocate resources to those fields."
+    if books_taken == False:
+        show scene bg dorm2
+        show Hana 
+        mc "So you're telling me that there are a bunch of famous actresses and artist cam from here?"
+        s "Yes, but what's even better is that some of them were also Luminaras in their time."
+        s "Necessity and want do not need to co-exist in the same tasks"
+        narrator "Sophia leans back in her chair as she leisurly flips through a manga"
+        mc "Maybe... I could do something else"
+        narrator "Sophia sits up, not having quite heard her, or was in slight disbeleif"
+        mc "I always wanted to study art you know, and from the documents you've shown me, it might help me. You know?"
+    s "You could write your essay on that you know?"
+    mc "Oh shoo-"
+    mc "I mean I completely forgot about that"
+    narrator "Hana scrambles for her notebook and begins writing"
+    show scene bg classroom
+    show Hana at left
+    show scene bg empty with fade
+    show scene bg classroom with fade
+    t "So, you rewrote your assignment?"
+    mc "Yeah. I took time and here is what I wrote"
+    narrator "Hana passes over the new essay to Ms. Melissa to which she nodded and sat down at her desk"
+    mc "{i}Is she really grading it in front of me again? Damn{/i}"
+    t "Learning new paths I see."
+    mc "Yes, I think in this month I learned about new opportunities I want to explore"
+    t "And that would be..art?"
+    mc "Art, writing, whatever I can do."
+    narrator "Ms.Melissa smiled simply down at Hana"
+    t "You know, your performance was never bad Hana, but it always could have been better"
+    t "You only did things out of necessity. All of it. I could give you a Tier 3 assignment and you would complete it successfully. I'm sure of it"
+    t "But you wouldn't have truly liked doing it. You showed nothing of what you liked doing and I couldn't give you missions based on it"
+    mc "So you gave me this month to figure it out"
+    t "Precisely"
+    t "So this month. You earned a new assigment"
+    mc "..."
+    mc "Oh?"
+    t "You-"
+    
+
+
+
+
+
+label luna_ending: 
