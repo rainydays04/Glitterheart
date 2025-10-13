@@ -248,7 +248,7 @@ label act_2:
             #introduce new character who likes ballet and introduces herself
             #idea her is for her to be a friend an mayb
             $ meet_luna = True
-            show Luna at right
+            
             narrator "You hear someone clearing their throat."
             idk "Sorry, hi. I couldn't help but ovehear you mention ballet?"
             narrator "Hana looks over to the see a girl with blonde hair and green eyes, towering slightly over her, but still managing to look so meek"
@@ -444,7 +444,7 @@ label act_2:
         show bg danceRoom with fade
         show Hana at left
         narrator "The music room is dusty from disuse,instruments pushes aside. Luna is in the centre dancing in front of the mirror to a hip-hop song."
-        show Luna at right
+        
         menu:
             "Watch her":
                 narrator "Hana leans against the door nonchalantly, crossing her arms as she watches Luna, mesmerized by her movements"
