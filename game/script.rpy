@@ -752,7 +752,7 @@ label sophia_ending:
     mc "Oh?"
     t "You-"
     
-
+label 
 
 
 
